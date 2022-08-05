@@ -1,13 +1,14 @@
-**librpitx** Radio frequency transmitter library for Raspberry Pi (B, B+, PI2, PI3 and PI zero)
+# LIBRPITX-RUST
 
-It is now the base of *rpitx* project, separate from application
+Rust bindings for [librpitx](https://github.com/F5OEO/librpitx).
+
+## REGENERATING
+
+```
+bindgen include/librpitx.h -o src/bindings.rs -- -x c++
+```
+
+## librpitx copyright
 
 _Copyright (c) Evariste Courjaud F5OEO. Code is GPL_V3
 
-# Installation
-
-```sh
-git clone https://github.com/F5OEO/librpitx
-cd librpitx/src
-make
-```
